@@ -1,0 +1,69 @@
+@import "https://fonts.googleapis.com/css2?family=Geologica:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700&display=swap";
+:root {
+  --ff-display: Geologica, Poppins, Helvetica, Arial, sans-serif;
+  --clr-accent-400: #ee9648;
+  --clr-neutral-100: #fff;
+  --clr-neutral-300: #c5c6c8;
+  --clr-neutral-500: #4f5052;
+  --clr-neutral-600: #282728;
+  --clr-neutral-700: #0d0e10;
+  --clr-heading: var(--clr-neutral-100);
+  --clr-text: var(--clr-neutral-300);
+  --clr-bg: var(--clr-neutral-700);
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-display);
+}
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--fw-medium);
+  color: var(--clr-heading);
+}
+h1 {
+  text-align: center;
+  margin-block: 3rem 2rem;
+  font-weight: 700;
+}
+.container {
+  cursor: pointer;
+  background-color: var(--clr-neutral-600);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-neutral-500);
+  max-width: 880px;
+  margin: 0.5rem 4rem;
+}
+.container:hover {
+  background-color: var(--clr-neutral-700);
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0.8rem;
+  border: none;
+  outline: transparent;
+  background-color: var(--clr-accent-400);
+}
+.container p {
+  padding-top: 0.8rem;
+}
